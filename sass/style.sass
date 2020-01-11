@@ -1,8 +1,22 @@
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/montserrat-v14-latin-regular.eot"); /* IE9 Compat Modes */
+$var1: #000000
+$var2: #c1b7b7
+$var3: #c4c4c4
+$var4: #959090
+$var5: #140202
+$var6: #faf3f3
+$var7: #eeeeee
+$var8: #4b6a93
+$var9: #e0e0e0
+
+font-face 
+	font-family: "Montserrat"
+	font-style: normal
+	font-weight: 400
+	src: url("..
+	src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("..
+
+/* IE9 Compat Modes */
   src: local("Montserrat Regular"), local("Montserrat-Regular"),
     url("../fonts/montserrat-v14-latin-regular.eot?#iefix")
       format("embedded-opentype"),
@@ -401,38 +415,336 @@ body {
 
 #section_4_image_1:hover {
   /* zoom: 2; */
-  transform: scale(4, 1.5);
-}
-.section_4_look {
-  margin-left: 5px;
-}
 
-.s_4_t {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-  margin-top: 10%;
-}
+font-face 
+	font-family: "Montserrat"
+	font-style: normal
+	font-weight: 500
+	src: url("..
+	src: local("Montserrat Medium"), local("Montserrat-Medium"),
+    url("..
 
-.s_4_p {
-  font-family: Montserrat;
+* 
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
 
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-}
-.evro {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
-}
-#s_4_t_2 {
-  padding-top: 15px;
-}
+html 
+	font-size: 10px
+	height: 100%
+	scroll-behavior: smooth
+	-webkit-user-select: initial
+	-moz-user-select: initial
+	-ms-user-select: initial
+	user-select: initial
 
-#s_4_t_4 {
-  padding-top: 145px;
-}
+body 
+	font-family: "Montserrat", sans-serif
+	min-height: 100%
+	font-size: 1.8rem
+	font-weight: normal
+	line-height: 1.2
+	color: $var1
+
+.section 
+	width: 100%
+	background: rgba(224, 215, 215, 0.61)
+	&_3 
+		margin: 0 auto
+		&_tittle 
+			font-style: normal
+			font-weight: normal
+			font-size: 30px
+			line-height: 37px
+			margin-left: 35%
+			margin: 0 auto
+		
+	
+	&_4 
+		width: 100%
+		margin: 0 auto
+		&_1 
+			display: flex
+			flex-direction: row
+			margin: 0 auto
+		
+		&_tittle 
+			margin: 0 auto
+			justify-content: center
+			margin-left: 40%
+		
+		&_img 
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			margin: 0 100px
+			position: relative
+		
+	
+
+.container 
+	max-width: 1140px
+	margin: 0 auto
+	text-decoration: none
+	&_1 
+		display: flex
+		flex-direction: row
+		align-items: center
+		margin-left: 50px
+	
+
+.header 
+	display: flex
+	flex-direction: row
+	align-items: center
+	font-style: normal
+	font-weight: normal
+	font-size: 14px
+	line-height: 17px
+	text-decoration: none
+	&_t 
+		text-decoration: none
+		color: $var2
+	
+
+#header_te 
+	color: $var1
+
+.left 
+	margin-top: 20px
+	&_img 
+		margin-bottom: 27px
+		&:hover 
+			zoom: 2
+		
+	
+
+.center, .right 
+	margin-left: 130px
+
+.center 
+	margin-top: 20px
+	&:hover 
+		zoom: 1.5
+	
+
+.right 
+	display: flex
+	flex-direction: column
+	justify-content: flex-start
+	margin-top: 27px
+
+.text 
+	font-style: normal
+	font-weight: normal
+	font-size: 21px
+	line-height: 26px
+	&_1 
+		font-style: normal
+		font-weight: 500
+		font-size: 18px
+		line-height: 22px
+		margin-top: 11px
+	
+	&_2 
+		font-style: normal
+		font-weight: bold
+		font-size: 21px
+		line-height: 26px
+		margin-top: 5px
+	
+
+.sm 
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+	width: 130px
+	&_1 
+		width: 42px
+		height: 28px
+		background: $var3
+		font-style: normal
+		font-weight: bold
+		font-size: 21px
+		line-height: 26px
+		text-align: center
+		margin-top: 23px
+		&:hover, &:active, &:focus 
+			background: $var4
+			border: 3px solid $var4
+		
+	
+
+#smb, #smc, #smd 
+	margin-left: 4px
+
+.txt 
+	margin-top: 23px
+	width: 416px
+	height: 168px
+	&_1 
+		margin-bottom: 13px
+		font-style: normal
+		font-weight: normal
+		font-size: 16px
+		line-height: 20px
+	
+
+.bag 
+	display: flex
+	flex-direction: row
+
+.vector 
+	margin-right: 18px
+	margin-top: 10px
+
+.button 
+	width: 293px
+	height: 43px
+	background: $var5
+	text-align: center
+	outline: none
+	outline: 0 
+	border: 0
+	text-decoration: none
+
+.button:hover, .vector:hover 
+	opacity: 0.8
+	transition: all 0.1s
+
+.add 
+	width: 293px
+	height: 43px
+	font-style: normal
+	font-weight: bold
+	font-size: 24px
+	line-height: 29px
+	color: $var6
+	background: $var5
+	border: 3px solid $var5
+	text-align: center
+	padding-top: 5px
+	outline: none
+	outline: 0 
+	border: 0
+
+.dws-menu 
+	margin-top: 77px
+	display: flex
+	flex-direction: row
+	width: 275px
+	height: 30px
+
+.product_1 
+	font-style: normal
+	font-weight: normal
+	font-size: 21px
+	line-height: 26px
+
+.polig 
+	margin-left: 215px
+	padding-bottom: 25px
+
+.table 
+	width: 653px
+	height: 205px
+	margin-left: -150px
+	font-style: normal
+	font-weight: normal
+	font-size: 18px
+	line-height: 22px
+
+.footer 
+	width: 100%
+	background: $var5
+	margin-top: 290px
+	&_1 
+		display: flex
+		flex-direction: row
+		margin: 0 auto
+		max-width: 1140px
+	
+	&_tittle_1, &_tittle_2, &_tittle_3, &_text_1, &_text_2, &_text_3 
+		font-style: normal
+		font-weight: 500
+		font-size: 18px
+		line-height: 22px
+	
+	&_tittle_1 
+		margin-bottom: 5px
+	
+	&_text_2, &_text_3 
+		margin-top: 5px
+	
+	&_text_1 
+		margin-bottom: 15px
+	
+
+.left_1, .center_1, .right_1 
+	color: $var6
+	margin-top: 32px
+	margin-left: 54px
+
+.red 
+	color: red
+
+.green 
+	color: aquamarine
+
+.main-page__slider .slick-slide 
+	padding: 40px 40px
+	border: 1px solid $var7
+	box-sizing: border-box
+	margin: 25px 40px
+	outline: none
+	box-shadow: #ccc 1px 1px 2px
+
+.main-page__slider 
+	margin: 0 auto
+	width: calc(85% - 40px)
+	flex-direction: row
+	justify-content: space-between
+	.slick-arrow:before 
+		color: $var8
+	
+
+.lazy_1 
+	width: 97.75px
+	height: 263px
+	margin-left: 15%
+
+#section_4_image_1 
+	-webkit-box-shadow: 0px 232px 0px 77px $var9
+	box-shadow: 0px 232px 0px 77px $var9
+	padding-top: 15px
+	margin-top: 20px
+	cursor: -webkit-zoom-in
+	cursor: zoom-in
+	-webkit-box-shadow: 0px 100px 130px -7px $var1000,
+    -1px 2px 0px 4px rgba(53, 50, 50, 0.16)
+	box-shadow: 0px 100px 130px -7px $var1000, -1px 2px 0px 4px rgba(0, 0, 0, 0.16)
+	&:hover 
+		zoom: 2
+		transform: scale(4, 1.5)
+	
+
+#section_4_image_2 
+	-webkit-box-shadow: 70px 30px 0px 3px rgba(224, 224, 224)
+	box-shadow: 70px 30px 0px 3px rgba(224, 224, 224)
+	margin-top: 20px
+	cursor: zoom-in
+
+#section_4_image_3 
+	-webkit-box-shadow: -1px -31px 0px 14px $var9
+	box-shadow: -1px -31px 0px 14px $var9
+	margin-top: 35px
+	cursor: zoom-in
+
+#section_4_image_4 
+	padding-top: 60px
+	-webkit-box-shadow: -44px -1px 0px 6px $var9
+	box-shadow: -44px -1px 0px 6px $var9
+	margin-top: 20px
+	cursor: -webkit-zoom-in
+	cursor: zoom-in
+
