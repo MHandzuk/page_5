@@ -5,7 +5,7 @@ $(document).ready(function() {
     slidesToScroll: 1,
     // variableWidth: true,
     // dots: true,
-    infinite: true,
+    // infinite: true,
     speed: 500,
     autoplay: true
     // prevArrow: '<img src="img/arrow.svg">',

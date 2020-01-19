@@ -127,7 +127,50 @@
 
               <a href="#" class="button"><p class="add">ADD TO BAG</p></a>
             </div>
-            <div class="dws-menu">
+            <div class="product_1">
+              <p>PRODUCT DETAILS</p>
+
+              <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')">
+                  <div class="a111"></div>
+                  <div class="a222"></div>
+                  <div class="a333"></div>
+                </button>
+              </div>
+            </div>
+            <div id="London" class="tabcontent">
+              <ul type="disc" class="table">
+                <li>Ripndip Snow Bird Puffer Jacket Multi</li>
+                <li>I021871_1C_00</li>
+                <li>65/35% Polyester/Cotton</li>
+                <li>5.7 oz water repellent fabric pile lined</li>
+                <li>body and hood nylon lined sleeves adjustable hood</li>
+                <li>waist, cuffs and bottom band</li>
+                <li>real leather stopper</li>
+                <li>front closure with snap</li>
+                <li>buttons and hidden personalized two-way</li>
+                <li>zip faux leather square label</li>
+              </ul>
+            </div>
+            <script>
+              function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                  tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                  tablinks[i].className = tablinks[i].className.replace(
+                    " active",
+                    ""
+                  );
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+              }
+            </script>
+            <!-- <div class="dws-menu">
               <ul>
                 <li>
                   <p class="product_1">PRODUCT DETAILS</p>
@@ -146,9 +189,7 @@
                   <li>zip faux leather square label</li>
                 </ul>
               </ul>
-              <!-- <p class="product_1">PRODUCT DETAILS</p>
-              <img src="img/Polygon.svg" alt="" class="polig" /> -->
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

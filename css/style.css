@@ -100,7 +100,7 @@ body {
   margin-bottom: 27px;
 }
 .left_img:hover {
-  zoom: 2;
+  /* zoom: 2; */
 }
 .center,
 .right {
@@ -110,7 +110,7 @@ body {
   margin-top: 20px;
 }
 .center:hover {
-  zoom: 1.5;
+  /* zoom: 1.5; */
 }
 
 .right {
@@ -208,6 +208,7 @@ body {
 .vector:hover {
   opacity: 0.8;
   transition: all 0.1s;
+  text-decoration: none;
 }
 .add {
   width: 293px;
@@ -220,32 +221,84 @@ body {
   background: #140202;
   /* border: 3px solid #140202; */
   text-align: center;
-  padding-top: 5px;
+  padding-top: 7px;
   outline: none;
   outline: 0 !important;
   border: 0;
 }
-.dws-menu {
+
+.tab {
+  overflow: hidden;
+  /* border: 1px solid #ccc; */
+  /* background-color: #f1f1f1; */
+  width: 50x;
+  height: 50px;
+}
+.a111,
+.a222,
+.a333 {
+  width: 15px;
+  height: 2.5px;
+  background-color: black;
+  margin: 3px 0;
+}
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  /* float: left; */
+  border: none;
+  outline: none;
+  cursor: pointer;
+  /* padding: 14px 16px; */
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  /* border: 1px solid #ccc; */
+  border-top: none;
+}
+
+/* .dws-menu {
   margin-top: 77px;
   display: flex;
   flex-direction: row;
   width: 275px;
   height: 30px;
-}
+} */
 .product_1 {
+  margin-top: 77px;
+  margin-bottom: 38px;
   font-style: normal;
   font-weight: normal;
   font-size: 21px;
   line-height: 26px;
+  display: flex;
+  flex-direction: row;
+  width: 275px;
+  height: 30px;
 }
 .polig {
   margin-left: 215px;
-  padding-bottom: 25px;
+  /* padding-bottom: 25px; */
 }
 
 .table {
   width: 653px;
-  height: 205px;
+  /* height: 205px; */
   margin-left: -150px;
   font-style: normal;
   font-weight: normal;
@@ -255,7 +308,7 @@ body {
 .footer {
   width: 100%;
   background: #140202;
-  margin-top: 290px;
+  /* margin-top: 290px; */
 }
 .footer_1 {
   display: flex;
